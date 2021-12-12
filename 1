@@ -1,0 +1,17 @@
+print('===================================')
+print('bem vindo ao jogo de adivinhação!!')
+print('===================================')
+chute = int(input('digite um numero:'))
+numerosecreto = 4
+print('você chutou', chute)
+acertou = chute == numerosecreto
+maior = chute > numerosecreto
+menor = chute < numerosecreto
+if (acertou):
+     print('parabens, você acertou o numero secreto')
+else:
+    if(maior):
+        print('você errou, seu chute foi maior do que o numero secreto!!')
+    elif(menor):
+        print('você errou, seu chute foi menor do que o numero secreto.')
+print('Fim do jogo!')
